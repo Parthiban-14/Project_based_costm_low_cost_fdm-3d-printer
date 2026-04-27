@@ -1,38 +1,102 @@
-# 🧰 Parts List – Low Cost 3D Printer
+# 🧰 Parts List – 3D Printer Wiring Diagram (Based on System Design)
 
-## 🔌 Electronics
-- Arduino Mega 2560
-- RAMPS 1.4 Shield
-- A4988 Stepper Drivers
-- NEMA 17 Stepper Motors (X, Y, Z, Extruder)
-- 12V 30A Power Supply
-- 12864 LCD Display
-- Endstops (X, Y, Z)
+This document lists all components used in the 3D printer system as shown in the wiring diagram.
+
+---
+
+## 🔌 Power System
+
+- 24V SMPS Power Supply  
+- Power Input Wires (AC Input)  
+- DC Output Wiring (+V, GND)  
+
+---
+
+## 🧠 Control Board
+
+- BIGTREETECH Control Board (or equivalent 32-bit board)  
+- Stepper Driver Modules (Integrated or External)  
+
+---
+
+## ⚙️ Stepper Motors
+
+- NEMA 17 Stepper Motor – X Axis  
+- NEMA 17 Stepper Motor – Y Axis  
+- NEMA 17 Stepper Motor – Z Axis  
+- NEMA 17 Stepper Motor – Extruder  
+
+---
 
 ## 🔥 Heating Components
-- E3D V6 Hotend
-- Heated Bed (12V)
-- Thermistor (100k NTC)
-- Heater Cartridge
 
-## ⚙️ Mechanical Parts
-- SS Rods (8mm)
-- Lead Screw (8mm)
-- Linear Bearings (8mm)
-- Flexible Coupling (5x8mm)
-- GT2 Belt
-- GT2 Pulley
-- Frame (Aluminum/Custom)
+- Heated Bed (24V)  
+- Hotend Assembly:
+  - Heater Cartridge  
+  - Thermistor (TH0)  
 
-## 🧩 Miscellaneous
-- Wires and connectors
-- Cooling fan
-- Screws and nuts
-- Filament (PLA)
+---
+
+## 🌡️ Sensors & Probes
+
+- Inductive Probe (5V)  
+- BLTouch Auto Bed Level Sensor  
+- ADXL345 Accelerometer (for vibration tuning)
+
+---
+
+## 🔘 Endstops
+
+- X-axis Endstop Switch  
+- Y-axis Endstop Switch  
+- (Optional) Z Endstop / Probe-based leveling  
+
+---
+
+## 🌬️ Cooling System
+
+- Hotend Cooling Fan  
+- Part Cooling Fan (FAN0)  
+- Controller Fan (FAN1)  
+
+---
+
+## 🖥️ Display
+
+- 12864 LCD Display  
+
+---
+
+## 🔌 Wiring & Connectors
+
+- Stepper Motor Wires  
+- Heater Wires  
+- Thermistor Wires  
+- Endstop Cables  
+- Fan Connectors  
+- Power Cables (24V lines)  
+- PCB Screw Terminals  
+
+---
+
+## 🎨 Wiring Color Code (as per diagram)
+
+- Red → +24V / +5V  
+- Black → GND  
+- Yellow → Signal  
+- Blue → Step  
+- Green → Direction  
+- Purple → Bed Power  
+- White → Thermistor / Sensor  
+- Orange → Probe / Data  
 
 ---
 
 ## 📌 Notes
-- Ensure proper current setting for A4988 drivers
-- Use quality power supply for stability
-- Maintain proper cooling for drivers and hotend
+
+- Ensure all GND connections are common  
+- Maintain correct polarity for heaters and fans  
+- Use proper insulation and cable management  
+- Verify connections before powering ON  
+
+---

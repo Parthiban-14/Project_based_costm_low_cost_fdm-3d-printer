@@ -1,39 +1,19 @@
-# 🖨️ Low Cost 3D Printer
+# 🖨️ Low Cost FDM 3D Printer
 
-A custom-built **Fused Deposition Modeling (FDM) 3D printer** developed using Arduino Mega, RAMPS 1.4, and Marlin firmware.  
-This project focuses on creating a **low-cost, scalable, and maintainable 3D printing solution**.
+A custom-built **Fused Deposition Modeling (FDM) 3D printer** developed using embedded systems, mechanical design, and open-source firmware.
+
+This project demonstrates a **low-cost, scalable 3D printing solution** with full hardware integration and system-level design.
 
 ---
 
 ## 🚀 Features
 
-- Build Volume: 200 x 200 x 170 mm
-- CoreXYZ / Cartesian Motion System
-- Marlin Firmware (v2.1.2.5)
-- LCD 12864 Display Interface
-- Low-cost and modular design
-- Supports PLA printing
-
----
-
-## 🧰 Hardware Components
-
-- Arduino Mega 2560  
-- RAMPS 1.4 Shield  
-- A4988 Stepper Drivers  
-- NEMA 17 Stepper Motors  
-- 12V 30A Power Supply  
-- Heated Bed (12V)  
-- E3D V6 Hotend  
-- GT2 Belt & Pulley System  
-
----
-
-## 💻 Software Used
-
-- Firmware: Marlin  
-- Slicer: Cura / Prusa Slicer  
-- Host Software: Pronterface  
+- Build Volume: 200 × 200 × 170 mm  
+- Cartesian Motion System  
+- Marlin Firmware Support  
+- 12864 LCD Interface  
+- Heated Bed with Temperature Control  
+- Modular & Upgradeable Design  
 
 ---
 
@@ -45,23 +25,68 @@ low-cost-3d-printer/
 ├── hardware/
 ├── software/
 ├── test_results/
-└── presentation/
-└── certificates/
 
-## 📜 Certification
-
-This project is certified/recognized by:
-
-- Institution Name / Grace college of Engineering 
-
-[📄 View Certificate](certificates/3d_printer_project_certificate.pdf)
 ---
 
-## 👥 Team Members
+## 🖼️ System Overview
 
-- Sakthi Raja V – Electronics & Wiring & Assembly
-- Mohammed Zaheer K – Firmware & System Integration  
-- Parthiban N –  Mechanical Design & Assembly 
+### 🔌 Wiring Diagram
+![Wiring Diagram](docs/images/wiring_diagram.png)
+
+---
+
+## 🧰 Parts List – 3D Printer Wiring Diagram
+
+### 🔌 Power System
+- 24V SMPS Power Supply  
+- Power Input Wires (AC Input)  
+- DC Output Wiring (+V, GND)  
+
+### 🧠 Control Board
+- BIGTREETECH Control Board  
+- Stepper Driver Modules  
+
+### ⚙️ Stepper Motors
+- NEMA 17 Stepper Motor – X, Y, Z, Extruder  
+
+### 🔥 Heating Components
+- Heated Bed (24V)  
+- Hotend (Heater Cartridge + Thermistor)  
+
+### 🌡️ Sensors & Probes
+- Inductive Probe  
+- BLTouch  
+- ADXL345  
+
+### 🔘 Endstops
+- X, Y Endstop Switches  
+
+### 🌬️ Cooling
+- Hotend Fan  
+- Part Cooling Fan  
+- Controller Fan  
+
+### 🖥️ Display
+- 12864 LCD Display  
+
+### 🔌 Wiring
+- Motor, heater, thermistor, fan, power cables  
+
+---
+
+## ⚙️ Calibration Data
+
+- X: 102 | Y: 103 | Z: 400 | E: 95  
+- Nozzle: 200°C | Bed: 60°C  
+- Speed: 50 mm/s  
+
+---
+
+## 👥 Team
+
+- Sakthi Raja V  
+- Mohammed Zaheer K  
+- Parthiban N  
 
 ---
 
